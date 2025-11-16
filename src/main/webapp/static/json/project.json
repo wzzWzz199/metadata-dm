@@ -1,0 +1,29 @@
+{
+  "status":3200,
+  "data":[
+    {
+      "code":"hd",
+      "name":"云产品",
+      "envs":[
+        {
+          "code":"dev",
+          "name":"开发环境",
+          "dataserver":"jdbc:mysql://192.168.6.39:16128/mycat_data",
+          "appserver":"192.168.56.1"
+        },
+        {
+          "code":"pre",
+          "name":"预发布",
+          "dataserver":"jdbc:mysql://192.168.6.64:18000/mycat_pc",
+          "appserver":"192.168.56.1"
+        },
+        {
+          "code":"test",
+          "name":"测试环境",
+          "dataserver":"jdbc:mysql://192.168.6.69:28000/mycat_pc",
+          "appserver":"192.168.56.1"
+        }
+      ]
+    }
+  ]
+}

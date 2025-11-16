@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:annotation>
+		<xs:documentation>该xsd文件用于校验升级脚本的编写是否符合规范</xs:documentation>
+	</xs:annotation>
+	<xs:element name="items">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:group ref="itemGroup"></xs:group>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="itemKey唯一约束">
+			<xs:selector xpath="item"></xs:selector>
+			<xs:field xpath="itemKey"></xs:field>
+		</xs:unique>
+	</xs:element>
+	<xs:group id="itemGroup" name="itemGroup">
+		<xs:sequence>
+			<xs:element name="itemKey">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="itemName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="500"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="funccode" type="xs:string"/>
+			<xs:element name="tablename" type="xs:string"/>
+			<xs:element name="fixedWhere" type="xs:string"/>
+			<xs:element name="dml_type" type="xs:string"/>
+			<xs:element name="fileds" type="xs:string"/>
+			<xs:element name="excludetables" minOccurs="0"/>
+			<xs:element name="excludefields" minOccurs="0"/>
+			<xs:element name="casefileds" minOccurs="0"/>
+			<xs:element name="exeSQL" type="xs:string"/>
+			<xs:element name="isenforce" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value=""></xs:enumeration>
+						<xs:enumeration value="true"></xs:enumeration>
+						<xs:enumeration value="false"></xs:enumeration>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="build_class" type="xs:string" minOccurs="0"/>
+			<xs:element name="upgrade_class" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- 当更新某个表的相关字段时，如果表名和字段名都一样，必须配置到一个xml片段中，不能拆开。 -->
+	<xs:element name="casefileds">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="casefield" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:group ref="casefieldGroup"></xs:group>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	<xs:group id="casefieldGroup" name="casefieldGroup">
+		<xs:sequence>
+			<xs:element name="casefieldname">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+			<!-- 单引号需要加上\，双引号不用处理。包含\字符时，前面也需要再加上\。涉及回车换行时，不是\n，是指
+			显示的内容不同行，需要改为一行，换行使用\n -->
+			<xs:element name="caseclause">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- -->
+			<xs:element name="casereldataclause">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>		
+		</xs:sequence>
+	</xs:group>
+	
+</xs:schema>

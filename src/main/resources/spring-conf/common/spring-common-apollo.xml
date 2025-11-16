@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:apollo="http://www.ctrip.com/schema/apollo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+        http://www.ctrip.com/schema/apollo http://www.ctrip.com/schema/apollo.xsd">
+   <apollo:config namespaces="cas-conf,debug-conf,dubbo-conf,emq-conf,env-conf,fastdfs-conf,inner-network-mapping,isoneport-conf,jdbc-conf,jpush-conf,kedacom-conf,ldap-conf,login-conf,module-conf,module-datasource-conf,module-domain-mapping-conf,msgpush-conf,mycat-conf,quartz-conf,rabbitmq-conf,rqreport-conf,security-conf,shiro-conf,sms-ali-conf,redis-conf
+,weixin-conf,attach-conf,sy-conf,acs-conf,project-conf,threadPool-conf,metadata-conf" order="1" />
+<!-- Properties文件读取配置，base的properties  -->
+     <!-- <context:property-placeholder location="classpath*:conf/*/*-conf.properties" /> -->
+</beans>

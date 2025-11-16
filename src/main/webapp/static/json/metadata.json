@@ -1,0 +1,127 @@
+{
+  "status"  :  3200,
+  "data"  :  [  {
+    "type"  :  "table",
+    "name"  :  "表定义",
+    "queryItemName"  :  "表编码",
+    "queryItem"  :  "table_code",
+    "listItemName"  :  "表编码,表名称",
+    "listItem"  :  "table_code,table_desc",
+    "linkedType"  :  [  ]
+  },  {
+    "type"  :  "pcform",
+    "name"  :  "PC表单",
+    "queryItemName"  :  "表单编码",
+    "queryItem"  :  "form_code",
+    "listItemName"  :  "表单编码,表单名称",
+    "listItem"  :  "form_code,form_name",
+    "linkedType"  :  [  {
+      "linkedtype"  :  "table",
+      "name"  :  "导出表定义"
+    }  ]
+  },  {
+    "type"  :  "mobileform",
+    "name"  :  "MOBILE表单",
+    "queryItemName"  :  "表单编码",
+    "queryItem"  :  "form_code",
+    "listItemName"  :  "表单编码,表单名称",
+    "listItem"  :  "form_code,form_name",
+    "linkedType"  :  [  {
+      "linkedtype"  :  "table",
+      "name"  :  "导出表定义"
+    }  ]
+  },  {
+    "type"  :  "pcfunc",
+    "name"  :  "PC功能",
+    "queryItemName"  :  "功能编码",
+    "queryItem"  :  "func_code",
+    "listItemName"  :  "功能编码,功能名称",
+    "listItem"  :  "func_code,func_name",
+    "linkedType"  :  [  {
+      "linkedtype"  :  "table",
+      "name"  :  "导出表定义"
+    },  {
+      "linkedtype"  :  "pcform",
+      "name"  :  "导出PC表单"
+    }  ]
+  },  {
+    "type"  :  "mobilefunc",
+    "name"  :  "MOBILE功能",
+    "queryItemName"  :  "功能编码",
+    "queryItem"  :  "func_code",
+    "listItemName"  :  "功能编码,功能名称",
+    "listItem"  :  "func_code,func_name",
+    "linkedType"  :  [  {
+      "linkedtype"  :  "table",
+      "name"  :  "导出表定义"
+    },  {
+      "linkedtype"  :  "mobileform",
+      "name"  :  "导出MOBILE表单"
+    }  ]
+  },  {
+    "type"  :  "pcmenu",
+    "name"  :  "PC菜单",
+    "queryItemName"  :  "菜单编码",
+    "queryItem"  :  "menucode",
+    "listItemName"  :  "菜单编码,菜单名称",
+    "listItem"  :  "menucode,menuname",
+    "linkedType"  :  [  {
+      "linkedtype"  :  "table",
+      "name"  :  "导出表定义"
+    },  {
+      "linkedtype"  :  "pcform",
+      "name"  :  "导出PC表单"
+    },  {
+      "linkedtype"  :  "pcfunc",
+      "name"  :  "导出PC功能"
+    }  ]
+  },  {
+    "type"  :  "mobilemenu",
+    "name"  :  "MOBILE菜单",
+    "queryItemName"  :  "菜单编码",
+    "queryItem"  :  "menucode",
+    "listItemName"  :  "菜单编码,菜单名称",
+    "listItem"  :  "menucode,menuname",
+    "linkedType"  :  [  ]
+  },  {
+    "type"  :  "dict",
+    "name"  :  "字典",
+    "queryItemName"  :  "字典编码",
+    "queryItem"  :  "dict_code",
+    "listItemName"  :  "字典编码,字典名称",
+    "listItem"  :  "dict_code,dict_name",
+    "linkedType"  :  [  ]
+  },  {
+    "type"  :  "export",
+    "name"  :  "导出模版",
+    "queryItemName"  :  "导出模版名称",
+    "queryItem"  :  "export_temp_name",
+    "listItemName"  :  "导出模版名称,功能编码",
+    "listItem"  :  "export_temp_name,func_code",
+    "linkedType"  :  [  ]
+  },  {
+    "type"  :  "import",
+    "name"  :  "导入模版",
+    "queryItemName"  :  "导入模版编码",
+    "queryItem"  :  "temp_code",
+    "listItemName"  :  "导入模版编码,导入模版名称",
+    "listItem"  :  "temp_code,temp_name",
+    "linkedType"  :  [  ]
+  },  {
+    "type" : "config",
+    "name" : "系统参数",
+    "queryItemName" : "参数编码",
+    "queryItem" : "conf_code",
+    "listItemName" : "参数编码,参数名称",
+    "listItem" : "conf_code,conf_name",
+    "linkedType" : [ ]
+  }, {
+    "type" : "permpackage",
+    "name" : "APP权限组",
+    "queryItemName" : "权限组编码",
+    "queryItem" : "package_code",
+    "listItemName" : "权限组编码,权限组名称",
+    "listItem" : "package_code,package_name",
+    "linkedType" : [ ]
+  } ]
+}

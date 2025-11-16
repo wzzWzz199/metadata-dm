@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+	<jmxConfigurator />
+	
+	<!-- 控制台输出日志 -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>[%-5level] [%thread] [%logger{80}:%line] - %msg --[%d{yyyy-MM-dd HH:mm:ss.SSS}] %n</pattern>
+		</layout>		
+	</appender>
+
+	<!-- 文件输出日志 (按时间 和 大小 分割) -->
+	<appender name="FILE" class= "ch.qos.logback.core.rolling.RollingFileAppender">  
+            <!-- 支持多JVM同时操作同一个日志文件 -->  
+            <prudent>true</prudent>
+            <!-- 按天来回滚，如果需要按小时来回滚，则设置为{yyyy-MM-dd_HH} -->  
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
+                 <fileNamePattern>${catalina.base}\logs-hap\hap.%d{yyyy-MM-dd}.%i.log</fileNamePattern>  
+                 <!-- 如果按天来回滚，则最大保存时间为1天，1天之前的都将被清理掉 -->  
+                 <maxHistory>${f.logback.maxHistory}</maxHistory>  
+                 <!-- 按时间回滚的同时，按文件大小来回滚 -->  
+                 <timeBasedFileNamingAndTriggeringPolicy  
+                      class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
+                      <maxFileSize>${f.logback.maxFileSize}</maxFileSize>  
+                 </timeBasedFileNamingAndTriggeringPolicy>  
+            </rollingPolicy>  
+             
+            <!-- 日志输出格式 -->  
+            <layout class="ch.qos.logback.classic.PatternLayout">  
+                 <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] [%thread] [%logger:%line] - %msg %n</Pattern>  
+            </layout>  
+	</appender>
+	
+	<!-- 文件输出日志 (按时间 和 大小 分割) -->
+	<appender name="FILE_ERROR" class= "ch.qos.logback.core.rolling.RollingFileAppender">  
+            <!-- 支持多JVM同时操作同一个日志文件 -->  
+            <prudent>true</prudent>
+            <!-- 按天来回滚，如果需要按小时来回滚，则设置为{yyyy-MM-dd_HH} -->  
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
+                 <fileNamePattern>${catalina.base}\logs-hap\error_hap.%d{yyyy-MM-dd}.%i.log</fileNamePattern>  
+                 <!-- 如果按天来回滚，则最大保存时间为1天，1天之前的都将被清理掉 -->  
+                 <maxHistory>${f.logback.maxHistory}</maxHistory>  
+                 <!-- 按时间回滚的同时，按文件大小来回滚 -->  
+                 <timeBasedFileNamingAndTriggeringPolicy  
+                      class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
+                      <maxFileSize>${f.logback.maxFileSize}</maxFileSize>  
+                 </timeBasedFileNamingAndTriggeringPolicy>  
+            </rollingPolicy>  
+             
+            <!-- 日志输出格式 -->  
+            <layout class="ch.qos.logback.classic.PatternLayout">  
+                 <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] [%thread] [%logger:%line] - %msg %n</Pattern>  
+            </layout>  
+            
+            <!-- 只打印错误日志 --> 
+            <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+	            <level>ERROR</level>  
+	            <onMatch>ACCEPT</onMatch>  
+	            <onMismatch>DENY</onMismatch>  
+	        </filter>
+	</appender>
+
+ 	<!-- 异步输出 -->  
+    <appender name ="FILE_ASYNC" class= "ch.qos.logback.classic.AsyncAppender">  
+            <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->  
+            <discardingThreshold >0</discardingThreshold>  
+            <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->  
+            <queueSize>1024</queueSize>  
+            <!-- 添加附加的appender,最多只能添加一个 -->  
+            <appender-ref ref ="FILE"/>         
+     </appender>  
+     
+     <!-- 异步输出 （ERROR级别日志）-->  
+     <appender name ="FILE_ASYNC_ERROR" class= "ch.qos.logback.classic.AsyncAppender">  
+            <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->  
+            <discardingThreshold >0</discardingThreshold>  
+            <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->  
+            <queueSize>1024</queueSize>  
+            <!-- 添加附加的appender,最多只能添加一个 -->  
+            <appender-ref ref ="FILE_ERROR"/>                    
+     </appender>
+
+	<!-- logger 级别 -->
+	<logger name="com.hayden">  
+        <level value="${f.logback.level.com.hayden}" />  
+    </logger>    
+    
+    <logger name="org.springframework">  
+        <level value="${f.logback.level.org.springframework}" />  
+    </logger>    
+    
+    <logger name="druid.sql.ResultSet">  
+        <level value="${f.logback.level.druid.sql.ResultSet}" />  
+    </logger>
+    
+    <logger name="druid.sql">  
+        <level value="${f.logback.level.druid.sql}" />  
+    </logger>
+
+    <logger name="net.sf.ehcache">  
+        <level value="${f.logback.level.net.sf.ehcache}" />  
+    </logger>  
+    
+    <logger name="org.quartz">  
+        <level value="${f.logback.level.org.quartz}" />  
+    </logger>
+
+    <logger name="org.springframework.scheduling.quartz">  
+        <level value="${f.logback.level.org.springframework.scheduling.quartz}" />  
+    </logger>
+    
+    <logger name="org.jgroups">  
+        <level value="ERROR" />  
+    </logger>
+    
+    <!-- <logger name="com.atomikos">  
+        <level value="ERROR" />  
+    </logger> -->
+
+	<root>
+		<level value="${f.logback.level.root}" />
+		<appender-ref ref="console" />
+		<appender-ref ref="FILE_ASYNC" />
+		<appender-ref ref="FILE_ASYNC_ERROR" />
+	</root>
+</configuration>

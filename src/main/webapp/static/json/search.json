@@ -1,0 +1,14 @@
+{
+  "status" : 3200,
+  "data" : [ {
+    "metaDataType" : "pcfunc",
+    "metaDataCode" : "SY_USER",
+    "metaDataName" : "员工管理",
+    "metaDataLinkType" : null
+  }, {
+    "metaDataType" : "pcfunc",
+    "metaDataCode" : "SY_USER_ROLE",
+    "metaDataName" : "用户角色管理",
+    "metaDataLinkType" : null
+  } ]
+}
