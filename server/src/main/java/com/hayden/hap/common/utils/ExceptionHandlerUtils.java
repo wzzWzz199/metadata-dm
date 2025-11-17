@@ -4,7 +4,7 @@ import com.hayden.hap.common.common.exception.HDException;
 import com.hayden.hap.common.enumerate.MessageLevel;
 import com.hayden.hap.common.formmgr.message.Message;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**

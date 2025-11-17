@@ -66,7 +66,7 @@ import org.springframework.web.servlet.view.RedirectView;
 import sun.misc.BASE64Decoder;
 
 import javax.script.ScriptException;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;

@@ -9,8 +9,8 @@ import com.hayden.hap.common.formmgr.message.Message;
 import com.hayden.hap.common.formmgr.message.ReturnResult;
 import com.hayden.hap.common.spring.service.IService;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.util.List;
 

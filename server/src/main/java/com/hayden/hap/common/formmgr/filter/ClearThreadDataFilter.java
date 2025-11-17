@@ -15,8 +15,8 @@ import com.hayden.hap.msg.push.entity.PushMsgDataVO;
 import com.hayden.hap.msg.push.entity.PushSrcTypeEnum;
 import org.springframework.data.redis.core.RedisTemplate;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;

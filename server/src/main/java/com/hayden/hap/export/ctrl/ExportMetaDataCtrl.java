@@ -9,14 +9,14 @@ import com.hayden.hap.export.service.IExportMetaDataService;
 import com.hayden.hap.serial.JsonUtils;
 import com.hayden.hap.utils.MetaDataRelation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -25,15 +25,15 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping("/metadata/export")
 public class ExportMetaDataCtrl {
 
 	@Autowired
 	IExportMetaDataService exportMetaDataService;
 	@Autowired
 	MetaDataRelation metaDataRelation;
-	@RequestMapping(method = RequestMethod.GET,value="/metadata/export/getMetaDataType")
-    @ResponseBody
+        @GetMapping(value="/getMetaDataType")
     public ReturnResult getMetaDataType(){
         ReturnResult returnResult=new ReturnResult();
         try {
@@ -46,9 +46,8 @@ public class ExportMetaDataCtrl {
         return returnResult;
     }
 	
-	@RequestMapping(method = RequestMethod.GET,value="/metadata/export/queryMetaData")
-    @ResponseBody
-    public ReturnResult queryMetaData(@RequestParam String project, @RequestParam String env,@RequestParam String metaType,String metaDataCode,ReqParamVO reqParam,String tenantid){
+        @GetMapping(value="/queryMetaData")
+    public ReturnResult queryMetaData(@RequestParam String project, @RequestParam String env,@RequestParam String metaType,@RequestParam(required = false) String metaDataCode,ReqParamVO reqParam,@RequestParam String tenantid){
         ReturnResult returnResult=new ReturnResult();
         try {
             returnResult.setData(exportMetaDataService.queryMetaData(project, env, metaType, metaDataCode,reqParam,Long.valueOf(tenantid)));
@@ -60,9 +59,9 @@ public class ExportMetaDataCtrl {
         return returnResult;
     }
 	
-	@RequestMapping(method = RequestMethod.POST,value="/metadata/export/exportMetaData")
+        @PostMapping(value="/exportMetaData")
     public void exportMetaData(HttpServletRequest request,
-			HttpServletResponse response) throws HDException{
+                        HttpServletResponse response) throws HDException{
 		String project = request.getParameter("project");
 		String env = request.getParameter("env");
 		String metaType = request.getParameter("metaType");
@@ -99,9 +98,9 @@ public class ExportMetaDataCtrl {
 //        }
 //        return returnResult;
 //    }
-	@RequestMapping(method = RequestMethod.GET,value="/metadata/export/exportFieldMetaData")
+        @GetMapping(value="/exportFieldMetaData")
     public void exportFieldMetaData(HttpServletRequest request,
-			HttpServletResponse response) throws HDException{
+                        HttpServletResponse response) throws HDException{
 		String project = request.getParameter("project");
 		String env = request.getParameter("env");
 		String table = request.getParameter("table");
@@ -113,8 +112,7 @@ public class ExportMetaDataCtrl {
 			handelException(request, response, e);
 		}
 	}
-	@RequestMapping(method = RequestMethod.GET, value = "/metadata/export/getModuleList")
-    @ResponseBody
+        @GetMapping(value = "/getModuleList")
     public ReturnResult getProjects(@RequestParam String project, @RequestParam String env) {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -161,9 +159,8 @@ public class ExportMetaDataCtrl {
 		}
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/metadata/export/getMetaAndTenants")
-	@ResponseBody
-	public ReturnResult getMetaAndTenants(@RequestParam String project, @RequestParam String env) {
+        @GetMapping(value = "/getMetaAndTenants")
+        public ReturnResult getMetaAndTenants(@RequestParam String project, @RequestParam String env) {
 		ReturnResult returnResult = new ReturnResult();
 		try {
 			returnResult.setData(exportMetaDataService.getMetaAndTenants(project,env));

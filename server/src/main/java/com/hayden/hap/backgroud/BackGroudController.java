@@ -16,13 +16,12 @@ import com.hayden.hap.upgrade.itf.IUpgradeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -31,7 +30,8 @@ import java.util.Map;
  * @author: liyanzheng
  * @date: 2020/6/2 13:15
  */
-@Controller
+@RestController
+@RequestMapping
 public class BackGroudController {
     @Autowired
     private DataSourceCreator dataSourceCreator;
@@ -52,8 +52,7 @@ public class BackGroudController {
 
     private String password = "6ty7yu";
 
-    @RequestMapping(method = RequestMethod.GET, value = "/cleanCache")
-    @ResponseBody
+    @GetMapping(value = "/cleanCache")
     public ReturnResult cleanCache(@RequestParam String project, @RequestParam String env, @RequestParam String module, @RequestParam String key) throws HDException {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -71,8 +70,7 @@ public class BackGroudController {
         return returnResult;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/cleanProgress")
-    @ResponseBody
+    @GetMapping(value = "/cleanProgress")
     public ReturnResult cleanProgress(@RequestParam String project, @RequestParam String env, @RequestParam String module, @RequestParam String key) throws HDException {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -90,8 +88,7 @@ public class BackGroudController {
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/rest")
-    @ResponseBody
+    @GetMapping(value = "/rest")
     public ReturnResult rest(@RequestParam String project, @RequestParam String env, @RequestParam String key) throws HDException {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -128,8 +125,7 @@ public class BackGroudController {
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/initdatabase")
-    @ResponseBody
+    @GetMapping(value = "/initdatabase")
     public ReturnResult initdatabase(@RequestParam String project, @RequestParam String env, @RequestParam String key) throws HDException {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -147,8 +143,7 @@ public class BackGroudController {
         return returnResult;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/cleanAllPlatCache")
-    @ResponseBody
+    @GetMapping(value = "/cleanAllPlatCache")
     public ReturnResult cleanAllPlatCache(@RequestParam String key) throws HDException {
         ReturnResult returnResult = new ReturnResult();
         try {

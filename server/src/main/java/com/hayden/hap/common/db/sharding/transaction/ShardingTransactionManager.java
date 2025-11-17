@@ -6,6 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -32,8 +33,9 @@ public class ShardingTransactionManager implements PlatformTransactionManager, I
 
     private  List<PlatformTransactionManager> transactionManagers = new ArrayList<PlatformTransactionManager>();
 
-    private String defaultDataSourceId = "datasource";
-    @Qualifier("datasource")
+    private String defaultDataSourceId = "dataSource";
+    @Autowired
+    @Qualifier("dataSource")
     private DataSource defaultDataSource;
 
     public void init(Map<String, DataSource> dataSources){

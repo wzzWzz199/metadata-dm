@@ -1,0 +1,62 @@
+jdbc_base_mycat:
+  url: ${APP_DB_URL}
+  username: ${APP_DB_USERNAME}
+  password: ${APP_DB_PASSWORD}
+  driverClassName: ${APP_DB_DRIVER:com.mysql.cj.jdbc.Driver}
+  dbType: ${APP_DB_TYPE:mysql}
+  pool:
+    initialSize: ${APP_DB_POOL_INITIAL:20}
+    maxActive: ${APP_DB_POOL_MAX:200}
+    minIdle: ${APP_DB_POOL_MIN:20}
+    validationQuery: ${APP_DB_VALIDATION:select 1}
+
+threadPool:
+  corePoolSize: ${THREAD_POOL_CORE:20}
+  maxPoolSize: ${THREAD_POOL_MAX:400}
+  queueCapacity: ${THREAD_POOL_QUEUE:200}
+  keepAliveSeconds: ${THREAD_POOL_KEEPALIVE:60}
+
+redis:
+  metadata:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT:6379}
+    pass: ${REDIS_PASSWORD:}
+    database: ${REDIS_DATABASE:0}
+    maxIdle: ${REDIS_MAX_IDLE:16}
+    maxTotal: ${REDIS_MAX_TOTAL:32}
+    maxWaitMillis: ${REDIS_MAX_WAIT:5000}
+    testOnBorrow: ${REDIS_TEST_ON_BORROW:true}
+
+META:
+  RELATION: ${META_RELATION}
+  GENCONF: ${META_GENCONF}
+  UPGRADE:
+    ISBUYCOLUMN: ${META_UPGRADE_ISBUYCOLUMN}
+    ROOTPATH: ${META_UPGRADE_ROOTPATH}
+    MODULE: ${META_UPGRADE_MODULE}
+  ENVCONF: ${META_ENVCONF}
+  TYPE: ${META_TYPE}
+  GIT:
+    ROOTPATH: ${META_GIT_ROOTPATH}
+    GITURL: ${META_GIT_URL}
+    GITUSER: ${META_GIT_USER}
+    GITPASSWORD: ${META_GIT_PASSWORD}
+
+METATYPE_RELATION: ${META_TYPE_RELATION}
+SENIOR_EXPORT_ALLFIELDS: ${SENIOR_EXPORT_ALLFIELDS:false}
+port:
+  isOne: ${PORT_IS_ONE:false}
+noLoginUser: ${NO_LOGIN_USER}
+debug:
+  cipher_mode: ${DEBUG_CIPHER_MODE:false}
+urlinnermapping: ${INNER_NETWORK_MAPPING}
+projectIdentify: ${PROJECT_IDENTIFY}
+keySecret: ${KEY_SECRET}
+modulemapping: ${MODULE_MAPPING}
+min:
+  genstart: ${MIN_GEN_START:2000000000000}
+default:
+  dataSource: ${DEFAULT_DATASOURCE:dataSource}
+sys:
+  mycat:
+    flag: ${SYS_MYCAT_FLAG:false}

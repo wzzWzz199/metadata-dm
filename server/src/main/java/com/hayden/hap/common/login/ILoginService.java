@@ -4,8 +4,8 @@ import com.hayden.hap.common.common.exception.HDException;
 import com.hayden.hap.common.entity.UserVO;
 import com.hayden.hap.common.formmgr.message.ReturnResult;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**

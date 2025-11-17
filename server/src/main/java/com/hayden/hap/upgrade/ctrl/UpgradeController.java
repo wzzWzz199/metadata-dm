@@ -5,11 +5,10 @@ import com.hayden.hap.common.formmgr.message.ReturnResult;
 import com.hayden.hap.common.formmgr.message.Status;
 import com.hayden.hap.upgrade.itf.IUpgradeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Description:
@@ -17,15 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author: liyanzheng
  * @date: 2020/6/2 17:56
  */
-@Controller
+@RestController
+@RequestMapping("/metadata/UPGRADE")
 public class UpgradeController {
 
     @Autowired
     IUpgradeService upgradeService;
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/metadata/UPGRADE/getModuleListCache")
-    @ResponseBody
+    @GetMapping("/getModuleListCache")
     public ReturnResult getModuleListCache(@RequestParam String project, @RequestParam String env) {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -42,8 +41,7 @@ public class UpgradeController {
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/metadata/UPGRADE/getModuleList")
-    @ResponseBody
+    @GetMapping("/getModuleList")
     public ReturnResult getProjects(@RequestParam String project, @RequestParam String env) {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -65,8 +63,7 @@ public class UpgradeController {
         return returnResult;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/metadata/UPGRADE/getVersionList")
-    @ResponseBody
+    @GetMapping("/getVersionList")
     public ReturnResult getVersions(@RequestParam String project, @RequestParam String env, @RequestParam String modulecode) {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -84,8 +81,7 @@ public class UpgradeController {
         return returnResult;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/metadata/UPGRADE/upgrade")
-    @ResponseBody
+    @GetMapping("/upgrade")
     public ReturnResult upgrade(@RequestParam String project, @RequestParam String env, @RequestParam String modulecode, @RequestParam String version,@RequestParam(required = false, defaultValue = "") String prover) {
         ReturnResult returnResult = new ReturnResult();
         try {
@@ -106,8 +102,7 @@ public class UpgradeController {
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/metadata/UPGRADE/stop")
-    @ResponseBody
+    @GetMapping("/stop")
     public ReturnResult stop(@RequestParam String project, @RequestParam String env, @RequestParam String modulecode) {
         ReturnResult returnResult = new ReturnResult();
         try {

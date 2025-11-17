@@ -8,7 +8,7 @@ import com.hayden.hap.common.utils.SyConstant;
 import com.hayden.hap.common.utils.thread.ThreadLocalUtils;
 import org.springframework.util.StringUtils;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**

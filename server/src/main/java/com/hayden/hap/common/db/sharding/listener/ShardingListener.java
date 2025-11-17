@@ -5,10 +5,10 @@ import com.hayden.hap.common.db.sharding.transaction.ShardingTransactionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
 
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
 import javax.sql.DataSource;
 import java.util.Map;
 
@@ -20,18 +20,17 @@ import java.util.Map;
  * @version V1.0   
  *  
  */
-public class ShardingListener implements ServletContextListener {
+@Component
+public class ShardingListener implements ApplicationListener<ContextRefreshedEvent> {
 
 	private static Logger logger = LoggerFactory.getLogger(ShardingListener.class);  
 	
-	public void contextDestroyed(ServletContextEvent arg0) {
-	}
-
-	public void contextInitialized(ServletContextEvent event) {
+        @Override
+        public void onApplicationEvent(ContextRefreshedEvent event) {
         try {
-        	ApplicationContext applicationContext = WebApplicationContextUtils.getWebApplicationContext(event.getServletContext());
+                ApplicationContext applicationContext = event.getApplicationContext();
             if(applicationContext == null)
-            	return ;
+                return ;
             Map<String, DataSource> dataSources = applicationContext.getBeansOfType(DataSource.class);
             JdbcTemplateSupportDao jdbcTemplateSupportDao = applicationContext.getBean(JdbcTemplateSupportDao.class);
             if(jdbcTemplateSupportDao != null){
@@ -42,7 +41,7 @@ public class ShardingListener implements ServletContextListener {
             	shardingTransactionManager.init(dataSources);
             }
         } catch (Exception e) {
-        	logger.error(e.getMessage());
+                logger.error(e.getMessage());
         }
-	}
+        }
 }

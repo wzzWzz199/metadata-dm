@@ -2,6 +2,7 @@ package com.hayden.hap.common.utils;
 
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.support.WebApplicationObjectSupport;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.web.context.support.WebApplicationObjectSupport;
  * @author wangyi
  * @date 2017年11月6日
  */
+@Component
 public class ApplicationContextUtils extends WebApplicationObjectSupport {
 	private static ApplicationContext applicationContext = null;
 
