@@ -1,4 +1,4 @@
-package com.hayden.hap.common.common.exception;
+package com.hayden.hap.dbop.exception;
 
 /**
  * 海顿 RuntimeException， 由底层或业务逻辑处理产生了程序无法处理的意外

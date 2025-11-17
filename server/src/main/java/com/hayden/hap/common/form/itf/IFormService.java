@@ -1,6 +1,6 @@
 package com.hayden.hap.common.form.itf;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.form.entity.FormVO;
 import com.hayden.hap.common.formmgr.itf.IAction;
 import com.hayden.hap.common.spring.service.IService;

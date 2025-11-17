@@ -9,7 +9,7 @@
 
 package com.hayden.hap.common.db.orm.sql;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.orm.exception.DBNotSupportedException;
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
 import com.hayden.hap.common.db.util.DBType;

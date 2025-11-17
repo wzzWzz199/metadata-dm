@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils.form;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.form.entity.FormItemPCVO;
 import com.hayden.hap.common.form.entity.FormItemVO;
 import com.hayden.hap.common.utils.VariableUtils;

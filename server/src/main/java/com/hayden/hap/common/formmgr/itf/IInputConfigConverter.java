@@ -1,6 +1,6 @@
 package com.hayden.hap.common.formmgr.itf;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.formmgr.entity.InputConfigVO;
 
 /**

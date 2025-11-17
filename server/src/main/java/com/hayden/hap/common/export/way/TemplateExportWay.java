@@ -2,7 +2,7 @@ package com.hayden.hap.common.export.way;
 
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.enumerate.DataTypeEnum;

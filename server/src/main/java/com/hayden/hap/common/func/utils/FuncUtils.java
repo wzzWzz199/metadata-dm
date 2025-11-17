@@ -1,7 +1,7 @@
 package com.hayden.hap.common.func.utils;
 
 import com.hayden.hap.common.common.entity.ReqParamVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.form.entity.FormVO;
 import com.hayden.hap.common.form.itf.IFormService;

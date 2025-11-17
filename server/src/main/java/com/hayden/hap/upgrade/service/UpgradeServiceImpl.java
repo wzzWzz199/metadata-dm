@@ -1,7 +1,7 @@
 package com.hayden.hap.upgrade.service;
 
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.common.db.util.ObjectUtil;

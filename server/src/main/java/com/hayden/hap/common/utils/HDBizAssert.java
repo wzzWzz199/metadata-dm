@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils;
 
 
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.formmgr.message.Status;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

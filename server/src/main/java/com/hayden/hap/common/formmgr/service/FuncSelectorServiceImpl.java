@@ -1,6 +1,6 @@
 package com.hayden.hap.common.formmgr.service;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.formmgr.entity.FormParamVO;
 import com.hayden.hap.common.formmgr.itf.IFuncSelectorService;
 import com.hayden.hap.common.formmgr.itf.IListFormService;

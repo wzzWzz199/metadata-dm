@@ -2,7 +2,7 @@ package com.hayden.hap.db.dataSource.itf;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;

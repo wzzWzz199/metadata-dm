@@ -5,7 +5,7 @@ package com.hayden.hap.common.formmgr.itf;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.dict.entity.DictDataWarperVO;
 import com.hayden.hap.common.formmgr.entity.FormParamVO;
 import com.hayden.hap.common.formmgr.entity.MetaData;

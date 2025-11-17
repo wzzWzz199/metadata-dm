@@ -2,7 +2,7 @@ package com.hayden.hap.common.utils;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.BaseVO;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.tenant.utils.TenantUtil;
 import com.hayden.hap.common.utils.session.CurrentEnvUtils;
 

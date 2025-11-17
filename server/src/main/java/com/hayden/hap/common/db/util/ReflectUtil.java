@@ -1,6 +1,6 @@
 package com.hayden.hap.common.db.util;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.reflect.ClassInfo;
 import com.hayden.hap.common.reflect.Invoker;
 import org.slf4j.Logger;

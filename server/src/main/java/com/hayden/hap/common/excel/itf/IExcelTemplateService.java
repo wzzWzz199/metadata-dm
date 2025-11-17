@@ -1,7 +1,7 @@
 package com.hayden.hap.common.excel.itf;
 
 import com.hayden.hap.common.common.entity.ReqParamVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.excel.entity.ExcelTemplateItemVO;
 import com.hayden.hap.common.export.entity.TemplateVO;
 import com.hayden.hap.common.formmgr.entity.FormParamVO;

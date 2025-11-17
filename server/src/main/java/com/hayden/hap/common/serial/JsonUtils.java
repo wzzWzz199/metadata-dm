@@ -2,7 +2,7 @@ package com.hayden.hap.common.serial;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,7 @@
 package com.hayden.hap.common.formmgr.action;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.form.itf.IFormService;
 import com.hayden.hap.common.formmgr.annotation.*;
 import com.hayden.hap.common.formmgr.entity.CardDataVO;

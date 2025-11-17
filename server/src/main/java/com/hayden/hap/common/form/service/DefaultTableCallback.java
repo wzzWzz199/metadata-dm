@@ -1,6 +1,6 @@
 package com.hayden.hap.common.form.service;
 
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.db.tableDef.itf.ITableInfoCallback;
 import com.hayden.hap.common.form.entity.FormVO;
 import com.hayden.hap.common.form.itf.IFormService;

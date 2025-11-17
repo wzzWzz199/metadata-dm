@@ -4,7 +4,7 @@ import com.hayden.hap.common.attach.entity.AttachDataVO;
 import com.hayden.hap.common.attach.entity.AttachShareInputConfigVO;
 import com.hayden.hap.common.attach.entity.AttachShareNodeVO;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.common.itf.IBaseService;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.db.tableDef.itf.ITableDefService;

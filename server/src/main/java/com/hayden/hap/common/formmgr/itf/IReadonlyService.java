@@ -2,7 +2,7 @@ package com.hayden.hap.common.formmgr.itf;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.formmgr.entity.ListDataVO;
 import com.hayden.hap.common.func.entity.FuncVO;
 import com.hayden.hap.common.spring.service.IService;

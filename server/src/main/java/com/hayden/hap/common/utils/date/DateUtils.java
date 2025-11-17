@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils.date;
 
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.formmgr.inputconfig.DateInputConfigVO;
 import org.apache.commons.lang.time.DateFormatUtils;
 import org.apache.commons.lang3.StringUtils;

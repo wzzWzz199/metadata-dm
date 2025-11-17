@@ -4,7 +4,7 @@ import com.hayden.hap.common.billcode.entity.BillCodeHeader;
 import com.hayden.hap.common.billcode.entity.BillCodeInputConfigVO;
 import com.hayden.hap.common.billcode.entity.BillCodeRow;
 import com.hayden.hap.common.billcode.entity.BillcodeSegVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.formmgr.inputconfig.DateInputConfigVO;
 import com.hayden.hap.common.formmgr.inputconfig.DictInputConfigVO;

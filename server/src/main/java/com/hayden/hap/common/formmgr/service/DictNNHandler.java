@@ -1,8 +1,8 @@
 package com.hayden.hap.common.formmgr.service;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.dict.entity.DictDataWarperVO;
 import com.hayden.hap.common.enumerate.InputTypeEnum;

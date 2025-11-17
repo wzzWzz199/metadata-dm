@@ -1,6 +1,6 @@
 package com.hayden.hap.common.tenant.itf;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.spring.service.IService;
 import com.hayden.hap.common.tenant.entity.TenantVO;

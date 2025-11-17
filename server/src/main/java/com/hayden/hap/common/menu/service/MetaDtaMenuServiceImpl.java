@@ -1,7 +1,7 @@
 package com.hayden.hap.common.menu.service;
 
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.menu.entity.EnvMenuVO;
 import com.hayden.hap.common.menu.entity.ProjectMenuVO;
 import com.hayden.hap.common.menu.itf.IMetaDtaMenuService;

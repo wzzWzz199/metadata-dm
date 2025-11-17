@@ -1,7 +1,7 @@
 package com.hayden.hap.common.form.service;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.form.entity.TestDate;
 import com.hayden.hap.common.formmgr.action.BaseAction;
 import com.hayden.hap.common.formmgr.annotation.BeforeQSListQuery;

@@ -1,6 +1,6 @@
 package com.hayden.hap.common.form.dao;
 
-import com.hayden.hap.common.common.dao.BaseDaoImpl;
+import com.hayden.hap.dbop.dao.BaseDaoImpl;
 import org.springframework.stereotype.Repository;
 
 /** 

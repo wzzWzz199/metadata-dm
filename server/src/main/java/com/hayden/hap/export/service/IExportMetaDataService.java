@@ -1,7 +1,7 @@
 package com.hayden.hap.export.service;
 
 import com.hayden.hap.common.common.entity.ReqParamVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.spring.service.IService;
 import com.hayden.hap.export.entity.MetaDataVO;
 import com.hayden.hap.export.entity.MetaTypeVO;

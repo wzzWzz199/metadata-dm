@@ -1,6 +1,6 @@
 package com.hayden.hap.common.reflect;
 
-import com.hayden.hap.common.common.exception.BaseRuntimeException;
+import com.hayden.hap.dbop.exception.BaseRuntimeException;
 
 /** 
  * @ClassName: ReflectionException 

@@ -1,9 +1,9 @@
-package com.hayden.hap.common.common.dao;
+package com.hayden.hap.dbop.dao;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.DaoRuntimeException;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.DaoRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.keyGen.KeyGeneratorManager;
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
@@ -1487,7 +1487,7 @@ public class BaseDaoImpl implements BaseDao {
 	/**
 	 * 
 	 *
-	 * @see com.hayden.hap.common.common.dao.BaseDao#queryByPKAndTenantid4update(java.lang.String, java.lang.Long, java.lang.Long, java.lang.String, java.lang.String, java.lang.String)
+	 * @see BaseDao#queryByPKAndTenantid4update(java.lang.String, java.lang.Long, java.lang.Long, java.lang.String, java.lang.String, java.lang.String)
 	 * @author zhangfeng
 	 * @date 2016年8月2日
 	 */
@@ -1699,7 +1699,7 @@ public class BaseDaoImpl implements BaseDao {
 	
 	/** 
 	 * 针对mysql、oracle数据库，返回表定义值相关的建表语句。
-	 * @see com.hayden.hap.common.common.dao.BaseDao#getCreateTableSql(java.lang.String, java.util.List)
+	 * @see BaseDao#getCreateTableSql(java.lang.String, java.util.List)
 	 * @author wangyi
 	 * @date 2017年11月9日
 	 */

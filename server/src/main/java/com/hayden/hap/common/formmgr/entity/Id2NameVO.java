@@ -1,6 +1,6 @@
 package com.hayden.hap.common.formmgr.entity;
 
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.formmgr.inputconfig.QueryselectorInputConfigVO;
 import com.hayden.hap.common.utils.VariableUtils;
 

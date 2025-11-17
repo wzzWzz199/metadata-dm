@@ -1,7 +1,7 @@
 package com.hayden.hap.common.tenant.utils;
 
 import com.hayden.hap.common.authc.util.SessionUtil;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.login.util.CookieUtil;
 import com.hayden.hap.common.utils.RequestUtils;
 import com.hayden.hap.common.utils.SyConstant;

@@ -1,10 +1,10 @@
 package com.hayden.hap.common.common.service;
 
-import com.hayden.hap.common.common.dao.BaseDao;
+import com.hayden.hap.dbop.dao.BaseDao;
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.common.itf.IBaseAllService;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;

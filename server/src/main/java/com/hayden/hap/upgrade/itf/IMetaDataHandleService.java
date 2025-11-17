@@ -1,6 +1,6 @@
 package com.hayden.hap.upgrade.itf;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.spring.service.IService;
 import com.hayden.hap.upgrade.entity.ProgressModuleVO;

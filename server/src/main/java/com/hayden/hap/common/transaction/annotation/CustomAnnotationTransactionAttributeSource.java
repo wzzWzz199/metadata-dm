@@ -1,7 +1,7 @@
 package com.hayden.hap.common.transaction.annotation;
 
-import com.hayden.hap.common.common.exception.HDCapturedException;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDCapturedException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import org.springframework.transaction.annotation.AnnotationTransactionAttributeSource;
 import org.springframework.transaction.annotation.Propagation;

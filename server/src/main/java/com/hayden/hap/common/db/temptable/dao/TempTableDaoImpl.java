@@ -1,6 +1,6 @@
 package com.hayden.hap.common.db.temptable.dao;
 
-import com.hayden.hap.common.common.dao.BaseDaoImpl;
+import com.hayden.hap.dbop.dao.BaseDaoImpl;
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.db.util.DBConstants;
 import com.hayden.hap.common.db.util.DBType;

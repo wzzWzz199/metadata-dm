@@ -1,6 +1,6 @@
 package com.hayden.hap.common.formmgr.query;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.enumerate.InputTypeEnum;
 import com.hayden.hap.common.form.entity.FormItemVO;
 import com.hayden.hap.common.formmgr.inputconfig.DictInputConfigVO;

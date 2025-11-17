@@ -1,6 +1,6 @@
 package com.hayden.hap.common.formmgr.utils;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.dict.entity.DictDataWarperVO;
 import com.hayden.hap.common.formmgr.inputconfig.DateInputConfigVO;
 import com.hayden.hap.common.formmgr.inputconfig.DictInputConfigVO;

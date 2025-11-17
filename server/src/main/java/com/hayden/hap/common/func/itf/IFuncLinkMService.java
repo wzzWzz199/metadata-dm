@@ -1,7 +1,7 @@
 package com.hayden.hap.common.func.itf;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.func.entity.FuncLinkMVO;
 import com.hayden.hap.common.spring.service.IService;
 

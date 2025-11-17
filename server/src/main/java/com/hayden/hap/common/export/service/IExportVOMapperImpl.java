@@ -3,7 +3,7 @@ package com.hayden.hap.common.export.service;
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.hayden.hap.common.attach.itf.IAttachService;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.common.itf.IBaseService;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.common.db.tableDef.itf.ITableDefService;

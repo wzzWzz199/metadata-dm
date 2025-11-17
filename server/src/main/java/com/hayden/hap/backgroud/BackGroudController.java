@@ -1,7 +1,7 @@
 package com.hayden.hap.backgroud;
 
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.formmgr.message.ReturnResult;

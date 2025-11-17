@@ -1,6 +1,6 @@
 package com.hayden.hap.common.upgrade.service;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.sqlcreate.entity.PatchXmlItemVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

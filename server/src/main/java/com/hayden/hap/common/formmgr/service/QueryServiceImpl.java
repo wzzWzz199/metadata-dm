@@ -1,7 +1,7 @@
 package com.hayden.hap.common.formmgr.service;
 
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.ShouldBeCatchException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.ShouldBeCatchException;
 import com.hayden.hap.common.enumerate.FitemTypeEnum;
 import com.hayden.hap.common.form.entity.FormItemVO;
 import com.hayden.hap.common.form.itf.IFormItemService;

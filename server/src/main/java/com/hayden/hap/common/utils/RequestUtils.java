@@ -1,8 +1,8 @@
 
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

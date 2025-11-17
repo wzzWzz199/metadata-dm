@@ -4,7 +4,7 @@ import com.hayden.hap.common.attach.entity.AttachDataVO;
 import com.hayden.hap.common.attach.itf.IAttachConstants;
 import com.hayden.hap.common.attach.utils.FastDfsUtils;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.dict.entity.DictDataWarperVO;
 import com.hayden.hap.common.enumerate.DataTypeEnum;

@@ -3,7 +3,7 @@ package com.hayden.hap.common.button.itf;
 import com.hayden.hap.common.button.entity.ButtonCacheVO;
 import com.hayden.hap.common.button.entity.ButtonVO;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.spring.service.IService;
 
 import java.util.List;

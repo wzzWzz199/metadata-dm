@@ -1,6 +1,6 @@
 package com.hayden.hap.common.utils.variable;
 
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.utils.variable.itf.IVarFunction;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;

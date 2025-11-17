@@ -4,7 +4,7 @@ import com.hayden.hap.common.attach.entity.AttachDfsVO;
 import com.hayden.hap.common.attach.entity.AttachParamVO;
 import com.hayden.hap.common.attach.itf.IAttachConstants;
 import com.hayden.hap.common.attach.server.FastDfsServiceImpl;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.Thumbnails.Builder;
 import org.slf4j.Logger;

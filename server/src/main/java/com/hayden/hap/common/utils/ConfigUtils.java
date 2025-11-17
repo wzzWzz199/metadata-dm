@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.config.itf.IConfigService;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import com.hayden.hap.common.utils.session.CurrentEnvUtils;

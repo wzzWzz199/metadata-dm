@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils;
 
 import com.hayden.hap.common.attach.itf.IAttachConstants;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.Java2DFrameConverter;

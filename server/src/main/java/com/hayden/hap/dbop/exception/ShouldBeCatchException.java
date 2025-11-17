@@ -1,4 +1,4 @@
-package com.hayden.hap.common.common.exception;
+package com.hayden.hap.dbop.exception;
 
 
 /**

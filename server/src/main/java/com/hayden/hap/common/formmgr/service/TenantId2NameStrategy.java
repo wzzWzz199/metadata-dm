@@ -1,7 +1,7 @@
 package com.hayden.hap.common.formmgr.service;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.formmgr.entity.Id2NameVO;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import com.hayden.hap.common.tenant.entity.TenantVO;

@@ -7,7 +7,7 @@ import com.hayden.hap.common.attach.itf.IAttachConstants;
 import com.hayden.hap.common.attach.itf.IAttachMethodService;
 import com.hayden.hap.common.attach.server.AbstractAttachServer;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.common.itf.IBaseService;
 import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.db.tableDef.itf.ITableDefService;

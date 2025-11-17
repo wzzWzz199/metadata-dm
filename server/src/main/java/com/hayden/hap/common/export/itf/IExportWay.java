@@ -3,7 +3,7 @@ package com.hayden.hap.common.export.itf;
 import com.hayden.hap.common.attach.itf.IAttachMethodService;
 import com.hayden.hap.common.attach.itf.IAttachService;
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.common.itf.IBaseService;
 import com.hayden.hap.common.db.tableDef.itf.ITableDefService;
 import com.hayden.hap.common.dict.itf.IDictDataService;

@@ -1,11 +1,10 @@
 package com.hayden.hap.common.db.orm.jdbc;
 
-import com.alibaba.druid.pool.xa.DruidXADataSource;
 import com.hayden.hap.common.common.entity.AbstractVO;
 import com.hayden.hap.common.common.entity.BaseVO;
 import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.common.exception.HDException;
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.db.orm.entity.ClobInfoVO;
 import com.hayden.hap.common.db.orm.sql.*;
 import com.hayden.hap.common.db.orm.typeHandler.TypeHandlerRegistry;
@@ -13,7 +12,6 @@ import com.hayden.hap.common.db.sharding.dataSource.DataSourceManager;
 import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
 import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.common.db.tableDef.itf.ITableDefService;
-import com.hayden.hap.common.db.temptable.dao.TempTableDaoImpl;
 import com.hayden.hap.common.db.util.DBSqlUtil;
 import com.hayden.hap.common.db.util.DBType;
 import com.hayden.hap.common.db.util.JdbcUtil;
@@ -21,7 +19,6 @@ import com.hayden.hap.common.db.util.ObjectUtil;
 import com.hayden.hap.common.reflect.ClassInfo;
 import com.hayden.hap.common.utils.ModuleDataSrcUtils;
 import org.apache.commons.beanutils.ConvertUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.DisposableBean;
@@ -36,8 +33,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
 /**

@@ -1,6 +1,6 @@
 package com.hayden.hap.upgrade.utils;
 
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.formmgr.message.Message;
 import com.hayden.hap.upgrade.run.UpgradeRun;

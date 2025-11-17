@@ -1,7 +1,7 @@
 package com.hayden.hap.common.dict.itf;
 
 import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.exception.HDException;
+import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.dict.entity.DictDataVO;
 import com.hayden.hap.common.dict.entity.DictDataWarperVO;
 import com.hayden.hap.common.dict.entity.DictVO;

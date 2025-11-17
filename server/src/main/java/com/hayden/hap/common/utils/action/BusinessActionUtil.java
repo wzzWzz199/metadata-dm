@@ -1,6 +1,6 @@
 package com.hayden.hap.common.utils.action;
 
-import com.hayden.hap.common.common.exception.HDRuntimeException;
+import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.utils.ClassUtils;
 import com.hayden.hap.common.utils.action.annotation.BusinessAction;
 import com.hayden.hap.common.utils.action.annotation.BusinessActionItem;
