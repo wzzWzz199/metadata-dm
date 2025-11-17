@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
+import { onBeforeUnmount, onMounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { ElMessage } from 'element-plus';
 import { Lock, UserFilled } from '@element-plus/icons-vue';
@@ -44,6 +44,15 @@ const session = useSessionStore();
 const form = reactive({ usercode: session.userCode || '', password: '' });
 const submitting = ref(false);
 const successMessage = ref('');
+const LOGIN_BODY_CLASS = 'login-page';
+
+onMounted(() => {
+  document.body.classList.add(LOGIN_BODY_CLASS);
+});
+
+onBeforeUnmount(() => {
+  document.body.classList.remove(LOGIN_BODY_CLASS);
+});
 
 async function handleSubmit() {
   if (!form.usercode || !form.password) {
@@ -68,9 +77,9 @@ async function handleSubmit() {
 }
 </script>
 
-<style scoped>
+<style>
 @import '@/assets/styles/login/default.css';
-@import '@/assets/styles/login/styles.css';
 @import '@/assets/styles/login/demo.css';
+@import '@/assets/styles/login/styles.css';
 @import '@/assets/styles/login/loaders.css';
 </style>
