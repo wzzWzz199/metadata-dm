@@ -1,4 +1,4 @@
-body {
+.login-page {
   -webkit-perspective: 800px;
           perspective: 800px;
   height: 100vh;
@@ -13,10 +13,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-body ::-webkit-input-placeholder {
+.login-page ::-webkit-input-placeholder {
   color: #4E546D;
 }
-body .authent {
+.login-page .authent {
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   display: none;
   background: #35394a;
@@ -45,26 +45,26 @@ body .authent {
   height: 70px;
   opacity: 0;
 }
-body .authent p {
+.login-page .authent p {
   text-align: center;
   color: white;
 }
-body .success {
+.login-page .success {
   display: none;
   color: #d5d8e2;
 }
-body .success p {
+.login-page .success p {
   font-size: 14px;
 }
-body p {
+.login-page p {
   color: #D3D7F7;
   font-size: 10px;
   text-align: center;
 }
-body .testtwo {
+.login-page .testtwo {
   left: -320px !important;
 }
-body .test {
+.login-page .test {
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   pointer-events: none;
   top: -100px !important;
@@ -74,7 +74,7 @@ body .test {
   -webkit-filter: blur(1px);
           filter: blur(1px);
 }
-body .login
+.login-page .login
 {
   box-shadow: -15px 15px 15px rgba(6, 17, 47, 0.7);
   opacity: 1;
@@ -114,20 +114,20 @@ body .login
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(53, 57, 74, 0)', endColorstr='rgb(0, 0, 0)',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-body .login .validation {
+.login-page .login .validation {
   position: absolute;
   z-index: 1;
   right: 10px;
   top: 14px;
   opacity: 0;
 }
-body .login .disclaimer {
+.login-page .login .disclaimer {
   position: absolute;
   bottom: 20px;
   left: 35px;
   width: 250px;
 }
-body .login_title {
+.login-page .login_title {
   color: #D3D7F7;
   height: 60px;
   text-align: left;
@@ -135,22 +135,22 @@ body .login_title {
   letter-spacing: 10px;
   text-align: center;
 }
-body .login_fields {
+.login-page .login_fields {
   height: 208px;
   position: absolute;
   left: 0;
 }
-body .login_fields .icon {
+.login-page .login_fields .icon {
   position: absolute;
   z-index: 1;
   left: 36px;
   top: 8px;
   opacity: .5;
 }
-body .login_fields input[type='password'],body .login_fields input[type='text'] {
+.login-page .login_fields input[type='password'],.login-page .login_fields input[type='text'] {
   color: #61BFFF !important;
 }
-body .login_fields input[type='text'], body .login_fields input[type='password'] {
+.login-page .login_fields input[type='text'], .login-page .login_fields input[type='password'] {
   color: #afb1be;
   width: 190px;
   margin-top: -2px;
@@ -165,10 +165,10 @@ body .login_fields input[type='text'], body .login_fields input[type='password']
   font-family: 'Microsoft Yahei', sans-serif;
   box-shadow: none;
 }
-body .login_fields__user, body .login_fields__password {
+.login-page .login_fields__user, .login-page .login_fields__password {
   position: relative;
 }
-body .login_fields__submit {
+.login-page .login_fields__submit {
   position: relative;
   top: 40px;/*17px*/
   left: 0;
@@ -176,16 +176,16 @@ body .login_fields__submit {
   right: 0;
   margin: auto;
 }
-body .login_fields__submit .forgot {
+.login-page .login_fields__submit .forgot {
   float: right;
   font-size: 10px;
   margin-top: 11px;
   text-decoration: underline;
 }
-body .login_fields__submit .forgot a {
+.login-page .login_fields__submit .forgot a {
   color: #606479;
 }
-body .login_fields__submit input {
+.login-page .login_fields__submit input {
   border-radius: 50px;
   background: transparent;
   padding: 10px 90px;  /*10px 50px;*/
@@ -198,11 +198,11 @@ body .login_fields__submit input {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
-body .login_fields__submit input:focus {
+.login-page .login_fields__submit input:focus {
   box-shadow: none;
   outline: none;
 }
-body .login_fields__submit input:hover {
+.login-page .login_fields__submit input:hover {
   color: white;
   background: #4FA1D9;
   cursor: pointer;
