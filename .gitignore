@@ -32,11 +32,6 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
-# Multi-module build artifacts
-server/target/
-server/src/main/resources/static/*
-!server/src/main/resources/static/.gitkeep
-
-# Frontend
-client/node_modules/
-client/dist/
+/client/node_modules/
+/client/dist/
+/client/.vite/
