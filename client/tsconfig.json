@@ -14,7 +14,11 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "types": ["vite/client", "node"]
+    "types": ["vite/client", "node"],
+    "baseUrl": "",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "cypress"],
   "references": [{ "path": "./tsconfig.node.json" }]

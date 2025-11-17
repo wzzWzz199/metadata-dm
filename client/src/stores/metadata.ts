@@ -77,7 +77,7 @@ export const useMetadataStore = defineStore('metadata', {
         env: this.selectedEnvironmentCode,
       });
       if (response.status !== STATUS_OK) {
-        throw new Error(response.messages?.[0]?.message || '加载模块失败');
+        throw new Error(response.message?.[0]?.message || '加载模块失败');
       }
       const modules = response.data || [];
       this.modules = modules.map((module) => ({
