@@ -1,7 +1,7 @@
 package com.hayden.hap.db.dataSource.itf;
 
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.db.dataSource.entity.SqlResultVO;
 
 public interface ISimpleSqlBuilder {

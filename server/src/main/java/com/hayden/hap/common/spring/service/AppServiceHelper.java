@@ -1,7 +1,7 @@
 package com.hayden.hap.common.spring.service;
 
 import com.hayden.hap.dbop.exception.HDRuntimeException;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;

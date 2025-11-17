@@ -1,11 +1,11 @@
 package com.hayden.hap.dbop.dao;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.entity.VOSet;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
 import java.util.Collection;

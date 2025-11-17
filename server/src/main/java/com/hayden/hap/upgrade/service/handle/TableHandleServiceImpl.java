@@ -1,6 +1,6 @@
 package com.hayden.hap.upgrade.service.handle;
 
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.upgrade.entity.ProgressModuleVO;
 import com.hayden.hap.upgrade.entity.UpgradeContext;

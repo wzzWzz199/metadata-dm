@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils.thread;
 
-import com.hayden.hap.common.common.entity.BaseVO;
-import com.hayden.hap.common.common.entity.CommonVO;
+import com.hayden.hap.dbop.entity.BaseVO;
+import com.hayden.hap.dbop.entity.CommonVO;
 
 /**
  * 处理线程级变量传递

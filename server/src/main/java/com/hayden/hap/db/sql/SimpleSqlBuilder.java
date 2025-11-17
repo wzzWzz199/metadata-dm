@@ -1,9 +1,9 @@
 package com.hayden.hap.db.sql;
 
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.orm.sql.JdbcType;
-import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.orm.sql.JdbcType;
+import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.db.dataSource.entity.SqlResultVO;
 import com.hayden.hap.db.dataSource.itf.ISimpleSqlBuilder;
 import org.springframework.stereotype.Component;

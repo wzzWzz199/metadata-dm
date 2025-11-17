@@ -1,13 +1,13 @@
 package com.hayden.hap.upgrade.service;
 
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateManager;
+import com.hayden.hap.dbop.db.orm.jdbc.JdbcTemplateManager;
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
-import com.hayden.hap.common.db.orm.sql.SqlBuilderManager;
-import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.db.util.DBType;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.orm.sql.SqlBuilderManager;
+import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.util.DBType;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import com.hayden.hap.common.utils.SyConstant;

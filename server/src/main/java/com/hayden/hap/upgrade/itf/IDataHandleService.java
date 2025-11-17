@@ -1,7 +1,7 @@
 package com.hayden.hap.upgrade.itf;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.spring.service.IService;
 import com.hayden.hap.db.dataSource.entity.SqlResultVO;

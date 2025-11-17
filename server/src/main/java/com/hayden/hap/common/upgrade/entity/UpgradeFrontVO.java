@@ -1,6 +1,6 @@
 package com.hayden.hap.common.upgrade.entity;
 
-import com.hayden.hap.common.common.entity.BaseVO;
+import com.hayden.hap.dbop.entity.BaseVO;
 
 public class UpgradeFrontVO extends BaseVO {
     /**

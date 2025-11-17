@@ -1,20 +1,20 @@
 package com.hayden.hap.common.utils.template;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.entity.BaseVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.BaseVO;
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.db.util.ObjectUtil;
-import com.hayden.hap.common.db.util.ResourceUtil;
-import com.hayden.hap.common.dict.entity.DictDataWarperVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.util.ResourceUtil;
+import com.hayden.hap.common.entity.dict.DictDataWarperVO;
 import com.hayden.hap.common.enumerate.ElementTypeEnum;
 import com.hayden.hap.common.enumerate.ExportTypeEnum;
 import com.hayden.hap.common.enumerate.InputTypeEnum;
-import com.hayden.hap.common.excel.entity.ExcelTemplateItemVO;
-import com.hayden.hap.common.excel.entity.ExcelTemplateVO;
-import com.hayden.hap.common.form.entity.FormItemVO;
-import com.hayden.hap.common.form.entity.FormVO;
+import com.hayden.hap.common.entity.excel.ExcelTemplateItemVO;
+import com.hayden.hap.common.entity.excel.ExcelTemplateVO;
+import com.hayden.hap.common.entity.form.FormItemVO;
+import com.hayden.hap.common.entity.form.FormVO;
 import com.hayden.hap.common.utils.ListUtil;
 import com.hayden.hap.common.utils.SyConstant;
 import org.slf4j.Logger;
@@ -59,7 +59,7 @@ public class TemplateUtils {
 	 * @param formVO
 	 * @param func_code
 	 * @param file_type
-	 * @return: com.hayden.hap.common.excel.entity.ExcelTemplateVO
+	 * @return: com.hayden.hap.common.entity.excel.ExcelTemplateVO
 	 * @Author: suntaiming
 	 * @Date: 2021/6/9 11:05
 	 */
@@ -91,7 +91,7 @@ public class TemplateUtils {
 	 * @param formItemVOS
 	 * @param funcTableDefVO
 	 * @param func_code
-	 * @return: java.util.List<com.hayden.hap.common.excel.entity.ExcelTemplateItemVO>
+	 * @return: java.util.List<com.hayden.hap.common.entity.excel.ExcelTemplateItemVO>
 	 * @Author: suntaiming
 	 * @Date: 2021/6/9 11:06
 	 */
@@ -150,7 +150,7 @@ public class TemplateUtils {
 	 * @param formItemVO
 	 * @param tableColumnVO
 	 * @param func_code
-	 * @return: com.hayden.hap.common.excel.entity.ExcelTemplateItemVO
+	 * @return: com.hayden.hap.common.entity.excel.ExcelTemplateItemVO
 	 * @Author: suntaiming
 	 * @Date: 2021/6/9 11:08
 	 */

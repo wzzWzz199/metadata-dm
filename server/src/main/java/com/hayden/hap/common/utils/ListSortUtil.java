@@ -1,6 +1,6 @@
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
 
 import java.lang.reflect.Method;
 import java.util.*;

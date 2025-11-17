@@ -1,6 +1,6 @@
 package com.hayden.hap.common.sqlcreate.entity;
 
-import com.hayden.hap.common.common.entity.BaseVO;
+import com.hayden.hap.dbop.entity.BaseVO;
 
 public class PatchXmlItemVO extends BaseVO {
 

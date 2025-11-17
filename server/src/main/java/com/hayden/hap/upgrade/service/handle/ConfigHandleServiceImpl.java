@@ -1,6 +1,6 @@
 package com.hayden.hap.upgrade.service.handle;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.db.dataSource.entity.SqlResultVO;
 import com.hayden.hap.upgrade.entity.UpgradeContext;

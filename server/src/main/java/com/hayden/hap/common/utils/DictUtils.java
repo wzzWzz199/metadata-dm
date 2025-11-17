@@ -1,10 +1,10 @@
 package com.hayden.hap.common.utils;
 
 import com.hayden.hap.common.cache.constant.CacheConstant;
-import com.hayden.hap.common.db.util.ObjectUtil;
-import com.hayden.hap.common.dict.entity.DictDataVO;
-import com.hayden.hap.common.dict.entity.DictDataWarperVO;
-import com.hayden.hap.common.dict.entity.TreeNodeVO;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
+import com.hayden.hap.common.entity.dict.DictDataVO;
+import com.hayden.hap.common.entity.dict.DictDataWarperVO;
+import com.hayden.hap.common.entity.dict.TreeNodeVO;
 import com.hayden.hap.common.dict.itf.IDictDataService;
 import com.hayden.hap.common.dict.itf.IDictService;
 import com.hayden.hap.common.formmgr.inputconfig.DictInputConfigVO;

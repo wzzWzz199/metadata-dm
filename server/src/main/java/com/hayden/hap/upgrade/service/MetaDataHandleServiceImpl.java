@@ -2,7 +2,7 @@ package com.hayden.hap.upgrade.service;
 
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.dbop.exception.HDRuntimeException;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import com.hayden.hap.db.dataSource.DataSourceCreator;

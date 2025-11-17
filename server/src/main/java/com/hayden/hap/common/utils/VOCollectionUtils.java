@@ -1,9 +1,9 @@
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.db.util.ObjectUtil;
-import com.hayden.hap.common.reflect.ClassInfo;
-import com.hayden.hap.common.reflect.Invoker;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
+import com.hayden.hap.dbop.reflect.ClassInfo;
+import com.hayden.hap.dbop.reflect.Invoker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

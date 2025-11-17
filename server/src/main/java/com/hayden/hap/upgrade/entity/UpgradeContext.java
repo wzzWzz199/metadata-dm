@@ -1,7 +1,7 @@
 package com.hayden.hap.upgrade.entity;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.db.dataSource.entity.MetaRelationVO;
 
 /**

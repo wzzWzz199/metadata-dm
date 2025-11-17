@@ -5,8 +5,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.hayden.hap.common.common.entity.BaseVO;
-import com.hayden.hap.common.reflect.ClassInfo;
+import com.hayden.hap.dbop.entity.BaseVO;
+import com.hayden.hap.dbop.reflect.ClassInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

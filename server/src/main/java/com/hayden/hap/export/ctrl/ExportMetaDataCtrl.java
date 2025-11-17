@@ -1,6 +1,6 @@
 package com.hayden.hap.export.ctrl;
 
-import com.hayden.hap.common.common.entity.ReqParamVO;
+import com.hayden.hap.dbop.entity.ReqParamVO;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.formmgr.message.ReturnResult;
 import com.hayden.hap.common.formmgr.message.Status;

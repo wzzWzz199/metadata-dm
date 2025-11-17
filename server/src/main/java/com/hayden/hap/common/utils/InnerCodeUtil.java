@@ -1,6 +1,6 @@
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.common.innercode.itf.IInnerCodeService;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 

@@ -1,10 +1,10 @@
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.dbop.exception.HDRuntimeException;
 import com.hayden.hap.common.enumerate.DataTypeEnum;
-import com.hayden.hap.common.form.entity.FormItemVO;
+import com.hayden.hap.common.entity.form.FormItemVO;
 import com.hayden.hap.common.formmgr.inputconfig.DateInputConfigVO;
 import com.hayden.hap.common.formmgr.utils.InputConfigUtils;
 import com.hayden.hap.common.utils.date.DateUtils;

@@ -1,6 +1,6 @@
 package com.hayden.hap.common.serial;
 
-import com.hayden.hap.common.common.entity.BaseVO;
+import com.hayden.hap.dbop.entity.BaseVO;
 
 import java.util.HashMap;
 import java.util.Map;

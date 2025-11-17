@@ -1,6 +1,6 @@
 package com.hayden.hap.common.sqlcreate.entity;
 
-import com.hayden.hap.common.common.entity.BaseVO;
+import com.hayden.hap.dbop.entity.BaseVO;
 
 /**
  * 升级，xml中使用了U操作，记录字段更新时需满足更新数据的条件。

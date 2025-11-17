@@ -1,8 +1,8 @@
 package com.hayden.hap.common.upgrade.service;
 
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.common.itf.IBaseService;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.itf.IBaseService;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.common.upgrade.entity.UpgradeFrontVO;
 import com.hayden.hap.common.upgrade.itf.IUpgradeService;
 import com.hayden.hap.common.utils.FileUtil;

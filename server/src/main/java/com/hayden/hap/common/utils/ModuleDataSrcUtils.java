@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils;
 
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
-import com.hayden.hap.common.reflect.ClassInfo;
+import com.hayden.hap.dbop.reflect.ClassInfo;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import com.hayden.hap.common.utils.properties.ModuleDataSrcPropertiesUtil;
 import org.apache.commons.lang3.StringUtils;

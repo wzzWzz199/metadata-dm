@@ -1,7 +1,7 @@
 package com.hayden.hap.common.spring.test;
 
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
-import com.hayden.hap.common.db.sharding.transaction.ShardingTransactionManager;
+import com.hayden.hap.dbop.db.sharding.transaction.ShardingTransactionManager;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;

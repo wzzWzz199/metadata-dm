@@ -1,16 +1,16 @@
 package com.hayden.hap.export.service;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.entity.BaseVO;
-import com.hayden.hap.common.common.entity.ReqParamVO;
-import com.hayden.hap.common.common.entity.VOSet;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.BaseVO;
+import com.hayden.hap.dbop.entity.ReqParamVO;
+import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.util.ObjectUtil;
-import com.hayden.hap.common.dict.entity.DictDataVO;
-import com.hayden.hap.common.func.entity.FuncLinkVO;
-import com.hayden.hap.common.menu.entity.MenuVO;
-import com.hayden.hap.common.tenant.entity.TenantVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
+import com.hayden.hap.common.entity.dict.DictDataVO;
+import com.hayden.hap.common.entity.func.FuncLinkVO;
+import com.hayden.hap.common.entity.meun.MenuVO;
+import com.hayden.hap.common.entity.tenant.TenantVO;
 import com.hayden.hap.common.utils.SyConstant;
 import com.hayden.hap.db.dataSource.DataSourceCreator;
 import com.hayden.hap.db.dataSource.entity.MetaRelationVO;

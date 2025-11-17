@@ -3,7 +3,7 @@ package com.hayden.hap.cache;
 import com.hayden.hap.cache.itf.ICacheService;
 import com.hayden.hap.common.cache.constant.CacheConstant;
 import com.hayden.hap.common.cache.utils.RedisCacheUtil;
-import com.hayden.hap.common.common.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.db.dataSource.DataSourceCreator;

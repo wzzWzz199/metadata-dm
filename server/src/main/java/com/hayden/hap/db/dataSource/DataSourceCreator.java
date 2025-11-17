@@ -1,7 +1,7 @@
 package com.hayden.hap.db.dataSource;
 
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateManager;
+import com.hayden.hap.dbop.db.orm.jdbc.JdbcTemplateManager;
 import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
 import com.hayden.hap.db.dataSource.entity.EnvConfVO;
 import com.hayden.hap.db.dataSource.entity.ProjectConfigVO;

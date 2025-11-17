@@ -1,10 +1,10 @@
 package com.hayden.hap.upgrade.service;
 
-import com.hayden.hap.common.common.entity.VOSet;
+import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.common.formmgr.message.Message;
 import com.hayden.hap.common.git.itf.IGitService;

@@ -9,8 +9,8 @@
 
 package com.hayden.hap.common.utils.datatype;
 
-import com.hayden.hap.common.db.util.TableDefDataType;
-import com.hayden.hap.common.form.entity.FormDataType;
+import com.hayden.hap.dbop.db.util.TableDefDataType;
+import com.hayden.hap.common.entity.form.FormDataType;
 
 import java.util.HashMap;
 import java.util.Map;

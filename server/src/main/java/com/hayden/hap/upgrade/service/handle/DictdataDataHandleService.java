@@ -1,10 +1,10 @@
 package com.hayden.hap.upgrade.service.handle;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.entity.VOSet;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.dict.entity.DictDataVO;
-import com.hayden.hap.common.dict.entity.DictVO;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.VOSet;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.common.entity.dict.DictDataVO;
+import com.hayden.hap.common.entity.dict.DictVO;
 import com.hayden.hap.common.entity.ParamVO;
 import com.hayden.hap.db.dataSource.itf.ISimpleJdbcTemplateSupportDao;
 import com.hayden.hap.upgrade.entity.UpgradeContext;

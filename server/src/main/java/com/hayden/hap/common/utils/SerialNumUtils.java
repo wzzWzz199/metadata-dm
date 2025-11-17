@@ -9,7 +9,7 @@
 
 package com.hayden.hap.common.utils;
 
-import com.hayden.hap.common.db.keyGen.itf.ISerialGeneratorService;
+import com.hayden.hap.dbop.db.keyGen.itf.ISerialGeneratorService;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
 
 /**

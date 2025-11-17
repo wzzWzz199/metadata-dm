@@ -1,7 +1,7 @@
 package com.hayden.hap.common.utils.variable.impl;
 
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.common.utils.ConfigUtils;
 import com.hayden.hap.common.utils.variable.itf.IVarFunction;
 

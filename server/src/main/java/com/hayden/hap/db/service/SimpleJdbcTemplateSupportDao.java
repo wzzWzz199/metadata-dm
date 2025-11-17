@@ -1,21 +1,21 @@
 package com.hayden.hap.db.service;
 
-import com.hayden.hap.common.common.entity.AbstractVO;
-import com.hayden.hap.common.common.entity.BaseVO;
-import com.hayden.hap.common.common.entity.VOSet;
+import com.hayden.hap.dbop.entity.AbstractVO;
+import com.hayden.hap.dbop.entity.BaseVO;
+import com.hayden.hap.dbop.entity.VOSet;
+import com.hayden.hap.dbop.db.orm.jdbc.*;
 import com.hayden.hap.dbop.exception.DaoRuntimeException;
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.common.db.orm.entity.ClobInfoVO;
-import com.hayden.hap.common.db.orm.jdbc.*;
-import com.hayden.hap.common.db.orm.sql.ConnectionCallbackMetaData;
-import com.hayden.hap.common.db.orm.sql.DynaSqlResultVO;
-import com.hayden.hap.common.db.orm.sql.DynaSqlVO;
-import com.hayden.hap.common.db.orm.sql.SqlBuilderManager;
-import com.hayden.hap.common.db.orm.typeHandler.TypeHandlerRegistry;
-import com.hayden.hap.common.db.tableDef.entity.TableColumnVO;
-import com.hayden.hap.common.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.db.util.DBConstants;
-import com.hayden.hap.common.db.util.ObjectUtil;
+import com.hayden.hap.dbop.db.orm.entity.ClobInfoVO;
+import com.hayden.hap.dbop.db.orm.sql.ConnectionCallbackMetaData;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlResultVO;
+import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
+import com.hayden.hap.dbop.db.orm.sql.SqlBuilderManager;
+import com.hayden.hap.dbop.db.orm.typeHandler.TypeHandlerRegistry;
+import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
+import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
+import com.hayden.hap.dbop.db.util.DBConstants;
+import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.db.dataSource.entity.SqlResultVO;
 import com.hayden.hap.db.dataSource.itf.IDataSourceGeneratorService;
 import com.hayden.hap.db.dataSource.itf.ISimpleJdbcTemplateSupportDao;
@@ -266,7 +266,7 @@ public class SimpleJdbcTemplateSupportDao implements ISimpleJdbcTemplateSupportD
     public <T extends AbstractVO> VOSet<T> query(String tableName, DynaSqlVO dynaSqlVO, String dataSourceId) {
         TableDefVO tableDefVO = this.queryDetailedTableByTbname(tableName, dataSourceId);
         if ("SY_FORM_ITEM".equals(tableName.toUpperCase())) {
-        	tableDefVO.setClassname("com.hayden.hap.common.form.entity.FormItemPCVOForExport");
+        	tableDefVO.setClassname("com.hayden.hap.common.entity.form.FormItemPCVOForExport");
 		}
 
         VOSet<T> resultVOSet = new VOSet();
