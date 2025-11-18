@@ -1,7 +1,7 @@
 package com.hayden.hap.common.login;
 
 import com.alibaba.fastjson.JSON;
-import com.hayden.hap.common.formmgr.message.ReturnResult;
+import com.hayden.hap.common.resp.ReturnResult;
 import com.hayden.hap.utils.CurrentEnvUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;

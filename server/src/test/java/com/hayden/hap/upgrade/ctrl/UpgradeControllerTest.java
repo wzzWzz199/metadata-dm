@@ -1,7 +1,8 @@
 package com.hayden.hap.upgrade.ctrl;
 
-import com.hayden.hap.common.formmgr.message.Status;
-import com.hayden.hap.upgrade.itf.IUpgradeService;
+import com.hayden.hap.common.resp.Status;
+import com.hayden.hap.controller.UpgradeController;
+import com.hayden.hap.service.upgrade.itf.IUpgradeService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;

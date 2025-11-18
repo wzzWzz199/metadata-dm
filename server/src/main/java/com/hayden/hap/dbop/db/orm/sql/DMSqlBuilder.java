@@ -8,7 +8,7 @@ import com.hayden.hap.dbop.db.util.IOracleDbTypeConstants;
 import com.hayden.hap.dbop.db.util.ObjectUtil;
 import com.hayden.hap.dbop.db.util.TableDefDataType;
 import com.hayden.hap.common.spring.service.AppServiceHelper;
-import com.hayden.hap.common.utils.SyConstant;
+import com.hayden.hap.dbop.utils.SyConstant;
 import oracle.sql.CLOB;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

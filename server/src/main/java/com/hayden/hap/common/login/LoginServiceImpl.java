@@ -2,10 +2,10 @@ package com.hayden.hap.common.login;
 
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.UserVO;
-import com.hayden.hap.common.formmgr.message.ReturnResult;
+import com.hayden.hap.common.resp.ReturnResult;
 import com.hayden.hap.serial.JsonUtils;
-import com.hayden.hap.upgrade.service.DbHandleServiceImpl;
-import com.hayden.hap.upgrade.utils.MetaDataFileUtils;
+import com.hayden.hap.service.upgrade.DbHandleServiceImpl;
+import com.hayden.hap.utils.MetaDataFileUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 

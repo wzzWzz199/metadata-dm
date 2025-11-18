@@ -1,6 +1,6 @@
 package com.hayden.hap.dbop.db.keyGen.itf;
 
-import com.hayden.hap.common.spring.service.IService;
+
 
 /** 
  * @ClassName: ISerialGeneratorService 

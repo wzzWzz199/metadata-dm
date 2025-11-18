@@ -1,6 +1,6 @@
 package com.hayden.hap.common.entity.dict;
 
-import com.hayden.hap.common.utils.DictUtils;
+import com.hayden.hap.dbop.utils.DictUtils;
 
 import java.io.Serializable;
 import java.util.List;

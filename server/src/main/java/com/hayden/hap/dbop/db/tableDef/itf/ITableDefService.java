@@ -3,7 +3,7 @@ package com.hayden.hap.dbop.db.tableDef.itf;
 import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.spring.service.IService;
+
 
 /** 
  * @ClassName: ITableService 

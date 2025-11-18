@@ -1,7 +1,7 @@
 package com.hayden.hap.utils;
 
 import com.hayden.hap.dbop.exception.HDException;
-import com.hayden.hap.db.dataSource.entity.MetaRelationVO;
+import com.hayden.hap.meta.dataSource.entity.MetaRelationVO;
 import com.hayden.hap.serial.JsonUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

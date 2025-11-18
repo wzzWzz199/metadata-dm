@@ -1,13 +1,13 @@
 package com.hayden.hap.cache;
 
 import com.hayden.hap.cache.itf.ICacheService;
-import com.hayden.hap.common.cache.constant.CacheConstant;
-import com.hayden.hap.common.cache.utils.RedisCacheUtil;
+import com.hayden.hap.cache.constant.CacheConstant;
+import com.hayden.hap.cache.utils.RedisCacheUtil;
 import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.ParamVO;
-import com.hayden.hap.db.dataSource.DataSourceCreator;
-import com.hayden.hap.upgrade.entity.UpgradeContext;
+import com.hayden.hap.meta.dataSource.DataSourceCreator;
+import com.hayden.hap.vo.upgrade.UpgradeContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.hayden.hap.dbop.db.util;
 
-import com.hayden.hap.common.utils.ModuleDataSrcUtils;
+import com.hayden.hap.dbop.utils.ModuleDataSrcUtils;
 
 /**
  * @Author: zhaorunjia

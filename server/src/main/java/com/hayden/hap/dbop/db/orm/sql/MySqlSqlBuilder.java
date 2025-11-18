@@ -3,7 +3,7 @@ package com.hayden.hap.dbop.db.orm.sql;
 import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
 import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.dbop.db.util.ObjectUtil;
-import com.hayden.hap.common.utils.SyConstant;
+import com.hayden.hap.dbop.utils.SyConstant;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;

@@ -5,7 +5,7 @@ import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
-import com.hayden.hap.common.spring.service.IService;
+
 import org.springframework.jdbc.core.ResultSetExtractor;
 
 import java.util.Collection;
@@ -20,7 +20,6 @@ import java.util.Map;
  * @version V1.0
  * 
  */
-@IService("baseAllService")
 public interface IBaseAllService {
 	/**
 	 * 

@@ -5,10 +5,10 @@ import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
 import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVoConstants;
 import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.common.db.util.*;
-import com.hayden.hap.common.utils.DbEnvUtils;
-import com.hayden.hap.common.utils.ModuleDataSrcUtils;
-import com.hayden.hap.common.utils.SyConstant;
-import com.hayden.hap.common.utils.properties.MycatPropertiesUtil;
+import com.hayden.hap.dbop.utils.DbEnvUtils;
+import com.hayden.hap.dbop.utils.ModuleDataSrcUtils;
+import com.hayden.hap.dbop.utils.SyConstant;
+import com.hayden.hap.dbop.utils.properties.MycatPropertiesUtil;
 import com.hayden.hap.dbop.db.util.*;
 import org.apache.commons.lang3.StringUtils;
 

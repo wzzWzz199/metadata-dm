@@ -1,6 +1,6 @@
 package com.hayden.hap.common.git.itf;
 
-import com.hayden.hap.common.spring.service.IService;
+
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.api.errors.GitAPIException;

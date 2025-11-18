@@ -5,7 +5,7 @@ import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.db.util.DBConstants;
 import com.hayden.hap.dbop.db.util.DBType;
 import com.hayden.hap.dbop.db.util.ObjectUtil;
-import com.hayden.hap.common.utils.ModuleDataSrcUtils;
+import com.hayden.hap.dbop.utils.ModuleDataSrcUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;

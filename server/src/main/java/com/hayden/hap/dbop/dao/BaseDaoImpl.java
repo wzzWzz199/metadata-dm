@@ -13,7 +13,7 @@ import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVoConstants;
 import com.hayden.hap.dbop.db.tableDef.entity.TableDefVO;
 import com.hayden.hap.dbop.db.util.DBConstants;
 import com.hayden.hap.dbop.db.util.ObjectUtil;
-import com.hayden.hap.common.utils.SyConstant;
+import com.hayden.hap.dbop.utils.SyConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

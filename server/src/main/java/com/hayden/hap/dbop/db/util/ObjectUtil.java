@@ -1,6 +1,6 @@
 package com.hayden.hap.dbop.db.util;
 
-import com.hayden.hap.common.utils.SyConstant;
+import com.hayden.hap.dbop.utils.SyConstant;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -1,0 +1,22 @@
+package com.hayden.hap.service.upgrade.itf;
+
+import com.hayden.hap.dbop.exception.HDException;
+import com.hayden.hap.common.entity.ParamVO;
+
+import com.hayden.hap.vo.upgrade.ProgressModuleVO;
+import org.eclipse.jgit.api.errors.GitAPIException;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+@IService("metaDataHandleService")
+public interface IMetaDataHandleService {
+    List<File> upgradeMetaData(ParamVO paramVO) throws HDException;
+
+    void doUpgrade(ParamVO paramVO, ProgressModuleVO progressModuleVO) throws Exception;
+
+    void clearAllCache();
+
+    void beforeUpgrade(ParamVO paramVO, ProgressModuleVO progressModuleVO) throws IOException, GitAPIException;
+}

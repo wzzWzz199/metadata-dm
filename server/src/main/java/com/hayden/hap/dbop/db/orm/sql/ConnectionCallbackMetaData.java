@@ -15,7 +15,7 @@ import com.hayden.hap.dbop.db.tableDef.entity.DataTypeUtil;
 import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
 import com.hayden.hap.dbop.db.util.DBType;
 import com.hayden.hap.dbop.db.util.TableDefDataType;
-import com.hayden.hap.common.utils.SyConstant;
+import com.hayden.hap.dbop.utils.SyConstant;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.ConnectionCallback;

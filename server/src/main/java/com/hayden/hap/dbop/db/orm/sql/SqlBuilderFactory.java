@@ -1,6 +1,6 @@
 package com.hayden.hap.dbop.db.orm.sql;
 
-import com.hayden.hap.common.utils.ModuleDataSrcUtils;
+import com.hayden.hap.dbop.utils.ModuleDataSrcUtils;
 
 /**
  * 获取sqlBuilder工厂

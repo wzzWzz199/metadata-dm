@@ -2,7 +2,7 @@ package com.hayden.hap.common.login;
 
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.common.entity.UserVO;
-import com.hayden.hap.common.formmgr.message.ReturnResult;
+import com.hayden.hap.common.resp.ReturnResult;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
