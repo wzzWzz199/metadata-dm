@@ -16,14 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @ClassName: ResultSetWrapper
- * @Description:ResultSet包装类
- * @author LUYANYING
- * @date 2015年4月21日 下午1:29:42
- * @version V1.0
- * 
- */
+
 public class ResultSetWrapper {
 	private final ResultSet resultSet;
 	private final TypeHandlerRegistry typeHandlerRegistry;

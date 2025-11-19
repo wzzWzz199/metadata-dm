@@ -11,11 +11,11 @@ import java.util.List;
 
 
 public class VOBatchPreparedStatementSetter implements BatchPreparedStatementSetter {
-	private List<Object> params = null;
-	private List<Integer> paramJdbcTypes = null;
-	private TypeHandlerRegistry typeHandlerRegistry = null;
-	private int batchSize = 0;
-	private JdbcType jdbcTypeForNull = JdbcType.OTHER;
+	private final List<Object> params;
+	private final List<Integer> paramJdbcTypes;
+	private final TypeHandlerRegistry typeHandlerRegistry;
+	private final int batchSize;
+	private final JdbcType jdbcTypeForNull = JdbcType.OTHER;
 	
 	public VOBatchPreparedStatementSetter(List<Object> params, List<Integer> paramJdbcTypes, TypeHandlerRegistry typeHandlerRegistry, int batchSize){
 		this.params = params;

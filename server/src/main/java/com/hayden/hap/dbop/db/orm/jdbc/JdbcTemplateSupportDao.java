@@ -1,4 +1,4 @@
-package com.hayden.hap.common.db.orm.jdbc;
+package com.hayden.hap.dbop.db.orm.jdbc;
 
 import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.entity.BaseVO;
@@ -35,7 +35,7 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 
 @Component
-public class JdbcTemplateSupportDao implements DisposableBean, InitializingBean {
+public class JdbcTemplateSupportDao {
 	private static final Logger logger = LoggerFactory.getLogger(JdbcTemplateSupportDao.class);
 
 	private String defaultDataSourceId = null;
@@ -47,21 +47,39 @@ public class JdbcTemplateSupportDao implements DisposableBean, InitializingBean 
 	@Autowired
 	private ITableDefService tableDefService;
 
+    public TableDefVO getTableDefVO(String tableName) {
+        return tableDefService.queryDetailedTableByTbname(tableName);
+    }
 
+    public void setVOPkColValue(AbstractVO vo, Object pkValue,
+                                TableDefVO tableDefVO) {
+        if (vo == null)
+            return;
+        String tableName = vo.getTableName();
+        if (tableDefVO == null)
+            tableDefVO = tableDefService.queryDetailedTableByTbname(tableName);
+        if (!ObjectUtil.isNotNull(getVOPkColValue(tableDefVO, vo))) {
+            String pkColName = tableDefVO.getPkColumnVO() != null ? tableDefVO
+                    .getPkColumnVO().getColcode() : null;
+            vo.set(pkColName, pkValue);
+        }
+    }
 
-
-	@Override
-	public void afterPropertiesSet() throws Exception {
-//        jdbcTemplateManager = new JdbcTemplateManager(dataSourceManager);
-	}
-
-	public void init(Map<String, DataSource> dataSources) {
-		jdbcTemplateManager.init(dataSources);
-	}
-
-
-    @Override
-    public void destroy() throws Exception {
-
+    public Object getVOPkColValue(TableDefVO tableDefVO, AbstractVO vo) {
+        ObjectUtil.validNotNull(vo, "vo is required.");
+        if (tableDefVO == null) {
+            String tableName = vo.getTableName();
+            tableDefVO = tableDefService.queryDetailedTableByTbname(tableName);
+        }
+        String pkColName = tableDefVO.getPkColumnVO() != null ? tableDefVO
+                .getPkColumnVO().getColcode() : null;
+        Object pkValue = null;
+        if (ObjectUtil.isNotNull(pkColName))
+            pkValue = vo.get(pkColName.toLowerCase());
+        //当pkValue类型不为Long时，转换成Long类型
+        if(pkValue != null && !(pkValue instanceof Long)){
+            pkValue = ConvertUtils.convert(pkValue, Long.class);
+        }
+        return pkValue;
     }
 }

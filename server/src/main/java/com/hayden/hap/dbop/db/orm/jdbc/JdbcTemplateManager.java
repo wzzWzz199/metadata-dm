@@ -1,7 +1,6 @@
 package com.hayden.hap.dbop.db.orm.jdbc;
 
-import com.hayden.hap.dbop.db.sharding.dataSource.DataSourceManager;
-import com.hayden.hap.common.db.sharding.dataSource.Shard;
+
 import com.hayden.hap.dbop.db.util.ObjectUtil;
 import org.springframework.jdbc.core.JdbcTemplate;
 

@@ -1,11 +1,11 @@
 package com.hayden.hap.dbop.dao;
 
+import com.hayden.hap.dbop.db.orm.jdbc.JdbcTemplateSupportDao;
 import com.hayden.hap.dbop.entity.AbstractVO;
 import com.hayden.hap.dbop.entity.VOSet;
 import com.hayden.hap.dbop.exception.DaoRuntimeException;
 import com.hayden.hap.dbop.exception.HDException;
 import com.hayden.hap.dbop.db.keyGen.KeyGeneratorManager;
-import com.hayden.hap.common.db.orm.jdbc.JdbcTemplateSupportDao;
 import com.hayden.hap.dbop.db.orm.sql.DynaSqlVO;
 import com.hayden.hap.dbop.db.orm.sql.SqlBuilderManager;
 import com.hayden.hap.dbop.db.tableDef.entity.TableColumnVO;
@@ -36,8 +36,7 @@ import java.util.Map;
  */
 @Repository("baseDao")
 public class BaseDaoImpl implements BaseDao {
-	private static final Logger logger = LoggerFactory
-			.getLogger(BaseDaoImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(BaseDaoImpl.class);
 
 	@Autowired
 	private JdbcTemplateSupportDao jdbcTemplateSupportDao;

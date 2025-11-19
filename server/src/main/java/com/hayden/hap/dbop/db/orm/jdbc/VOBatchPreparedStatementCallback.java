@@ -22,8 +22,8 @@ import java.util.List;
  *  
  */
 public class VOBatchPreparedStatementCallback implements PreparedStatementCallback<int[]>{
-	private BatchPreparedStatementSetter batchPreparedStatementSetter = null;
-	private int perBatchSize = 0;
+	private final BatchPreparedStatementSetter batchPreparedStatementSetter;
+	private final int perBatchSize;
 	
 	public VOBatchPreparedStatementCallback(BatchPreparedStatementSetter batchPreparedStatementSetter, int perBatchSize){
 		this.batchPreparedStatementSetter = batchPreparedStatementSetter;
